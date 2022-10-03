@@ -44,7 +44,9 @@ public class Chooser {
                     break;
                 }
                 double convertedSum = Converter.getSum(balance.getBalance(), currency.getCurrencyRate(currencyIndex));
+                System.out.println("---------------------");
                 System.out.println("На вашем счету " + convertedSum + " " + currency.getCurrency(currencyIndex));
+                System.out.println("---------------------");
                 break;
             default:
                 System.exit(0);
